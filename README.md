@@ -1,4 +1,4 @@
-# Carrie Ng's Portfolio
+# React Portfolio
 
 ## About 
 - Carrie Ng's Portfolio Link: https://carrieng.vercel.app/
