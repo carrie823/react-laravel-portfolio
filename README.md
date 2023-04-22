@@ -5,5 +5,5 @@
 
 ## Features
 - Built using a react frontend and a laravel CMS backend
-- Routed pages Home, About Me, Projects, and Contact pages
+- Routed pages Home, About Me, Projects, Education, and Contact pages
 - Links deployed project websites and contacts 
