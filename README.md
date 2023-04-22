@@ -1,7 +1,9 @@
-# React Portfolio
+# Carrie Ng's Portfolio
 
-Carrie Ng's Portfolio Link: https://carrieng.vercel.app/
+## About 
+- Carrie Ng's Portfolio Link: https://carrieng.vercel.app/
 
-Portfolio built using a react frontend and a laravel backend.
-
-
+## Features
+- Built using a react frontend making API calls to a laravel backend
+- Routed pages Home, About Me, Projects, and Contact pages
+- Links deployed project websites and contacts 
