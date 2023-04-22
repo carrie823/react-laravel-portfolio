@@ -20,7 +20,6 @@ export default function Projectinfo() {
       );
       let data = await response.json();
       console.log(data);
-      // setPortfolio(data[0].title);
       setProjectTitle(data[0].title);
       setProjectLink(data[0].url);
       setProjectContent(data[0].content);
@@ -29,10 +28,8 @@ export default function Projectinfo() {
       setProjectImage2(data[1].image);
       setProjectTitle2(data[1].title);
       setProjectLink2(data[1].url);
-      // setProjectTitle2(data[1].skills)
       setProjectContent2(data[1].content);
-      // setsetProjectSource(data[0].);
-      //setProjectSource(data.source_url);
+
     }
     getProject();
   }, []);
@@ -50,7 +47,7 @@ export default function Projectinfo() {
       <h2>{projectTitle}</h2> 
       <div>{projectContent}</div>
       <div><strong>Langages: HTML, CSS</strong></div>
-      <div id="project1-link"><a href={projectLink}>Site Link</a></div>
+      <div id="project1-link"><a href={projectLink}>View Project</a></div>
     </div>
     <div id="project2">
       <div class="project-pic">
@@ -59,7 +56,7 @@ export default function Projectinfo() {
       <h2>{projectTitle2}</h2>
       <div>{projectContent2}</div>
       <div><strong>Langages: HTML, CSS, JavaScript</strong></div>
-      <div id="project2-link"><a href={projectLink2}>Site Link</a></div>
+      <div id="project2-link"><a href={projectLink2}>View Project</a></div>
     </div>
     </main>
   );
