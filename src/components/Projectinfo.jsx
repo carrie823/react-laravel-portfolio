@@ -39,6 +39,7 @@ export default function Projectinfo() {
         <div class="project-pic">
             <img src= {projectImage} alt="humber current webpage screenshoot" width="300"/>
         </div>
+
         <h2>{projectTitle}</h2> 
         <div>{projectContent}</div>
         <div><strong>Langages: HTML, CSS</strong></div>
