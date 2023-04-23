@@ -1,6 +1,5 @@
 import {useState, useEffect} from "react";
-// import calculator from "./IMG/calculator.jpg"
-// import current from "./IMG/humbercurrent.png"
+
 
 export default function Projectinfo() {
   const [projectTitle, setProjectTitle] = useState("");
@@ -37,13 +36,9 @@ export default function Projectinfo() {
   return (
     <main id="project-info">
     <div id="project1">
-      {/* <div class="project-pic">
-          <img src= {current} alt="humber current webpage screenshoot" width="300"/>
-      </div> */}
       <div class="project-pic">
           <img src= {projectImage} alt="humber current webpage screenshoot" width="300"/>
       </div>
-
       <h2>{projectTitle}</h2> 
       <div>{projectContent}</div>
       <div><strong>Langages: HTML, CSS</strong></div>
