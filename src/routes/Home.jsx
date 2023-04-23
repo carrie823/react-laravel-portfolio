@@ -1,4 +1,3 @@
-import UselessFact from "../components/UselessFact";
 import image from "./images/drawing.png"
 
 export default function Home() {
