@@ -6,7 +6,7 @@ export default function Contactinfo() {
 
   const [contactTitle2, setContactTitle2] = useState("");
   const [contactURL2, setContactURL2] = useState("");
-  //const [projectSource, setProjectSource] = useState();
+
 
   useEffect(() => {
     const getContact= async () => {
@@ -19,8 +19,7 @@ export default function Contactinfo() {
       setContactURL(data[0].url);
       setContactTitle2(data[1].title);
       setContactURL2(data[1].url);
-      // setsetProjectSource(data[0].);
-      // setProjectSource(data.source_url);
+
     }
     getContact();
   }, []);
