@@ -35,24 +35,24 @@ export default function Projectinfo() {
 
   return (
     <main id="project-info">
-    <div id="project1">
-      <div class="project-pic">
-          <img src= {projectImage} alt="humber current webpage screenshoot" width="300"/>
+      <div id="project1">
+        <div class="project-pic">
+            <img src= {projectImage} alt="humber current webpage screenshoot" width="300"/>
+        </div>
+        <h2>{projectTitle}</h2> 
+        <div>{projectContent}</div>
+        <div><strong>Langages: HTML, CSS</strong></div>
+        <div id="project1-link"><a href={projectLink}>View Project</a></div>
       </div>
-      <h2>{projectTitle}</h2> 
-      <div>{projectContent}</div>
-      <div><strong>Langages: HTML, CSS</strong></div>
-      <div id="project1-link"><a href={projectLink}>View Project</a></div>
-    </div>
-    <div id="project2">
-      <div class="project-pic">
-          <img src= {projectImage2} alt="Price calculator webpage screenshoot" width="300"/>
+      <div id="project2">
+        <div class="project-pic">
+            <img src= {projectImage2} alt="Price calculator webpage screenshoot" width="300"/>
+        </div>
+        <h2>{projectTitle2}</h2>
+        <div>{projectContent2}</div>
+        <div><strong>Langages: HTML, CSS, JavaScript</strong></div>
+        <div id="project2-link"><a href={projectLink2}>View Project</a></div>
       </div>
-      <h2>{projectTitle2}</h2>
-      <div>{projectContent2}</div>
-      <div><strong>Langages: HTML, CSS, JavaScript</strong></div>
-      <div id="project2-link"><a href={projectLink2}>View Project</a></div>
-    </div>
     </main>
   );
 }
