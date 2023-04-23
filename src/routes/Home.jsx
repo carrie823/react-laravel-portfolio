@@ -14,7 +14,7 @@ export default function Home() {
       <div class="pic">
         <img src= {image} alt="digital illustration of girl" width="300"/>
       </div>
-      {/* <UselessFact /> */}
+      
      
     </main>
   );
