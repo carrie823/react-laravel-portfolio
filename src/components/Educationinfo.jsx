@@ -10,7 +10,7 @@ export default function Educationinfo() {
   const [educationCert2, setEducationCert2] = useState("");
   const [educationDesc2, setEducationDesc2] = useState("");
   const [educationYear2, setEducationYear2] = useState("");
-  //const [projectSource, setProjectSource] = useState();
+
 
   useEffect(() => {
     const getEducation = async () => {
@@ -28,8 +28,7 @@ export default function Educationinfo() {
       setEducationCert2(data[1].certification);
       setEducationDesc2(data[1].description);
       setEducationYear2(data[1].year);
-      // setsetProjectSource(data[0].);
-      // setProjectSource(data.source_url);
+
     }
     getEducation();
   }, []);
