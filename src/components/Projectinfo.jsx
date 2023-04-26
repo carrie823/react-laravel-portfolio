@@ -2,15 +2,20 @@ import {useState, useEffect} from "react";
 
 
 export default function Projectinfo() {
-  const [projectTitle, setProjectTitle] = useState("");
+  const [projectTitle, setProjectTitle] = useState();
   const [projectLink, setProjectLink] = useState();
   const [projectContent, setProjectContent] = useState();
   const [projectImage, setProjectImage] = useState();
 
-  const [projectTitle2, setProjectTitle2] = useState("");
+  const [projectTitle2, setProjectTitle2] = useState();
   const [projectLink2, setProjectLink2] = useState();
   const [projectContent2, setProjectContent2] = useState();
   const [projectImage2, setProjectImage2] = useState();
+  
+  const [projectTitle3, setProjectTitle] = useState();
+  const [projectLink3, setProjectLink3] = useState();
+  const [projectContent3, setProjectContent3] = useState();
+  const [projectImage3, setProjectImage3] = useState();
 
   useEffect(() => {
     const getProject = async () => {
@@ -28,6 +33,11 @@ export default function Projectinfo() {
       setProjectTitle2(data[1].title);
       setProjectLink2(data[1].url);
       setProjectContent2(data[1].content);
+      
+      setProjectImage3(data[2].image);
+      setProjectTitle3(data[2].title);
+      setProjectLink3(data[2].url);
+      setProjectContent3(data[2].content);
 
     }
     getProject();
@@ -53,6 +63,16 @@ export default function Projectinfo() {
         <div>{projectContent2}</div>
         <div><strong>Langages: HTML, CSS, JavaScript</strong></div>
         <div id="project2-link"><a href={projectLink2}>View Project</a></div>
+      </div>
+      
+       <div id="project2">
+        <div class="project-pic">
+            <img src= {projectImage3} alt="Art blog webpage screenshoot" width="300"/>
+        </div>
+        <h2>{projectTitle3}</h2>
+        <div>{projectContent3}</div>
+        <div><strong>Langages: HTML, CSS</strong></div>
+        <div id="project2-link"><a href={projectLink3}>View Project</a></div>
       </div>
     </main>
   );
