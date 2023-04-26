@@ -16,6 +16,11 @@ export default function Projectinfo() {
   const [projectLink3, setProjectLink3] = useState();
   const [projectContent3, setProjectContent3] = useState();
   const [projectImage3, setProjectImage3] = useState();
+  
+  const [projectTitle4, setProjectTitle4] = useState();
+  const [projectLink4, setProjectLink4] = useState();
+  const [projectContent4, setProjectContent4] = useState();
+  const [projectImage4, setProjectImage4] = useState();
 
   useEffect(() => {
     const getProject = async () => {
@@ -38,6 +43,11 @@ export default function Projectinfo() {
       setProjectTitle3(data[2].title);
       setProjectLink3(data[2].url);
       setProjectContent3(data[2].content);
+      
+      setProjectImage3(data[3].image);
+      setProjectTitle3(data[3].title);
+      setProjectLink3(data[3].url);
+      setProjectContent3(data[3].content);
 
     }
     getProject();
@@ -74,6 +84,17 @@ export default function Projectinfo() {
         <div><strong>Langages: HTML, CSS</strong></div>
         <div id="project2-link"><a href={projectLink3}>View Project</a></div>
       </div>
+
+       <div id="project2">
+        <div class="project-pic">
+            <img src= {projectImage4} alt="Art blog webpage screenshoot" width="300"/>
+        </div>
+        <h2>{projectTitle4}</h2>
+        <div>{projectContent4}</div>
+        <div><strong>Langages: HTML, CSS</strong></div>
+        <div id="project2-link"><a href={projectLink4}>View Project</a></div>
+      </div>
+      
     </main>
   );
 }
