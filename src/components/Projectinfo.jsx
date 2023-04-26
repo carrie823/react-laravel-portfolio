@@ -91,7 +91,7 @@ export default function Projectinfo() {
         </div>
         <h2>{projectTitle4}</h2>
         <div>{projectContent4}</div>
-        <div><strong>Langages: HTML, CSS</strong></div>
+        <div><strong>Langages: HTML, CSS, PHP, MySQL</strong></div>
         <div id="project2-link"><a href={projectLink4}>View Project</a></div>
       </div>
       
