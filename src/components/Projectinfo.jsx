@@ -44,10 +44,10 @@ export default function Projectinfo() {
       setProjectLink3(data[2].url);
       setProjectContent3(data[2].content);
       
-      setProjectImage3(data[3].image);
-      setProjectTitle3(data[3].title);
-      setProjectLink3(data[3].url);
-      setProjectContent3(data[3].content);
+      setProjectImage4(data[3].image);
+      setProjectTitle4(data[3].title);
+      setProjectLink4(data[3].url);
+      setProjectContent4(data[3].content);
 
     }
     getProject();
