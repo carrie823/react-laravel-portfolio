@@ -12,7 +12,7 @@ export default function Projectinfo() {
   const [projectContent2, setProjectContent2] = useState();
   const [projectImage2, setProjectImage2] = useState();
   
-  const [projectTitle3, setProjectTitle] = useState();
+  const [projectTitle3, setProjectTitle3] = useState();
   const [projectLink3, setProjectLink3] = useState();
   const [projectContent3, setProjectContent3] = useState();
   const [projectImage3, setProjectImage3] = useState();
