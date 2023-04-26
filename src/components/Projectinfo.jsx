@@ -87,7 +87,7 @@ export default function Projectinfo() {
 
        <div id="project2">
         <div class="project-pic">
-            <img src= {projectImage4} alt="Art blog webpage screenshoot" width="300"/>
+            <img src= {projectImage4} alt="porfolio webpage screenshoot" width="300"/>
         </div>
         <h2>{projectTitle4}</h2>
         <div>{projectContent4}</div>
