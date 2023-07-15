@@ -22,6 +22,11 @@ export default function Projectinfo() {
   const [projectContent4, setProjectContent4] = useState();
   const [projectImage4, setProjectImage4] = useState();
 
+  const [projectTitle5, setProjectTitle5] = useState();
+  const [projectLink5, setProjectLink5] = useState();
+  const [projectContent5, setProjectContent5] = useState();
+  const [projectImage5, setProjectImage5] = useState();
+
   useEffect(() => {
     const getProject = async () => {
       let response = await fetch(
@@ -48,6 +53,11 @@ export default function Projectinfo() {
       setProjectTitle4(data[3].title);
       setProjectLink4(data[3].url);
       setProjectContent4(data[3].content);
+
+      setProjectImage4(data[4].image);
+      setProjectTitle4(data[4].title);
+      setProjectLink4(data[4].url);
+      setProjectContent4(data[4].content);
 
     }
     getProject();
@@ -93,6 +103,16 @@ export default function Projectinfo() {
         <div>{projectContent4}</div>
         <div><strong>Langages: HTML, CSS, PHP, MySQL</strong></div>
         <div id="project2-link"><a href={projectLink4}>View Project</a></div>
+      </div>
+
+      <div id="project2">
+        <div class="project-pic">
+            <img src= {projectImage5} alt="porfolio webpage screenshoot" width="300"/>
+        </div>
+        <h2>{projectTitle5}</h2>
+        <div>{projectContent5}</div>
+        <div><strong>Langages: MERN Stack (MongoDB, Express.js, React, Node.js)</strong></div>
+        <div id="project2-link"><a href={projectLink5}>View Project</a></div>
       </div>
       
     </main>
