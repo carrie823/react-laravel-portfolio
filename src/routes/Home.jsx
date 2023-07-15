@@ -4,7 +4,7 @@ export default function Home() {
   return(
     <main id="main">
       <h2 id="subsite-name">
-        Front-End Web Developer & Digital Illustrator
+        Web Developer & Digital Illustrator
       </h2>
       <div id="home-about">
         <h2 id="main-heading">Hi there! I'm Carrie!</h2>
